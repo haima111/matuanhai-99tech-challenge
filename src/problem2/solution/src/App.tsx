@@ -80,6 +80,10 @@ const App = () => {
   return (
     <div className="bg-[url(./assets/background.png)] h-screen w-screen bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center">
       <div className="rounded-md shadow-lg bg-white p-4 md:p-6 md:w-96">
+        <p className="font-bold text-xl text-blue-800 text-center">
+          {"Exchange currency service".toUpperCase()}
+        </p>
+        <Separator className="my-2" />
         <Form {...methods}>
           <form onSubmit={methods.handleSubmit(onSubmit)}>
             <FormField
