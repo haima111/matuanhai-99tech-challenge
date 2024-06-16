@@ -1,0 +1,27 @@
+[
+    {
+        "blockchain": "Osmosis",
+        "currency": "OSMO",
+        "price": 0.3772974333333333
+    },
+    {
+        "blockchain": "Ethereum",
+        "currency": "ETH",
+        "price": 1645.9337373737374
+    },
+    {
+        "blockchain": "Arbitrum",
+        "currency": "ARB",
+        "price": 0.9149
+    },
+    {
+        "blockchain": "Zilliqa",
+        "currency": "ZIL",
+        "price": 0.01651813559322034
+    },
+    {
+        "blockchain": "Neo",
+        "currency": "NEO",
+        "price": 12.68
+    }
+]
