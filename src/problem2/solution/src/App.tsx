@@ -79,8 +79,8 @@ const App = () => {
 
   return (
     <div className="bg-[url(./assets/background.png)] h-screen w-screen bg-no-repeat bg-center bg-cover flex flex-col justify-center items-center">
-      <div className="rounded-md shadow-lg bg-white p-4 md:p-6 md:w-96">
-        <p className="font-bold text-xl text-blue-800 text-center">
+      <div className="rounded-md shadow-2xl bg-blue-500/20 p-4 md:p-6 md:w-96">
+        <p className="font-bold text-xl text-blue-400 text-center">
           {"Exchange currency service".toUpperCase()}
         </p>
         <Separator className="my-2" />
@@ -91,7 +91,7 @@ const App = () => {
               name="fromCurrency"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>From Currency</FormLabel>
+                  <FormLabel className="text-blue-400">From Currency</FormLabel>
                   <FormControl>
                     <ComboBox<TCurrency> {...field} options={defaultOptions} />
                   </FormControl>
@@ -104,7 +104,7 @@ const App = () => {
               name="toCurrency"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>To Currency</FormLabel>
+                  <FormLabel className="text-blue-400">To Currency</FormLabel>
                   <FormControl>
                     <ComboBox<TCurrency> {...field} options={defaultOptions} />
                   </FormControl>
@@ -117,7 +117,7 @@ const App = () => {
               name="value"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Value</FormLabel>
+                  <FormLabel className="text-blue-400">Value</FormLabel>
                   <FormControl>
                     <InputNumber placeholder="Type value exchange" {...field} />
                   </FormControl>
@@ -135,7 +135,7 @@ const App = () => {
             )}
             <div className="flex flex-col md:flex-row gap-2">
               <Button
-                className="bg-slate-600 hover:bg-slate-500 gap-2 flex-1"
+                className="bg-slate-600 hover:bg-slate-500 gap-2 flex-1 shadow-2xl"
                 onClick={() => {
                   setFinalResult("");
                   methods.reset();
@@ -145,7 +145,7 @@ const App = () => {
                 <span>Reset</span>
               </Button>
               <Button
-                className="bg-blue-600 hover:bg-blue-500 gap-2 flex-1"
+                className="bg-blue-600 hover:bg-blue-500 gap-2 flex-1 shadow-2xl"
                 type="submit"
               >
                 <Orbit />
